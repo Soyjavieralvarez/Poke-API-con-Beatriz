@@ -1,25 +1,67 @@
-*{
-    box-sizing: border-box;
-    margin:0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  font-family: "Londrina Solid", cursive;
 }
 
-:root{
-    --LightCoral:#F08080;
-    --Salon:#FA8072;
-    --DarkSalmon:#E9967A;
-    --LightSalmon: #FFA07A;
-    --Crimson:#DC143C;
-    --Red:#FF0000;
-    --FireBrick:#B22222;
-    --DarkRed: #8B0000;
-    --White:#FFFFFF;
-    --PaleGreen:#75e375;
-    --DarkGreen:#006400;
+:root {
+  --LightCoral: #f08080;
+  --Salon: #fa8072;
+  --DarkSalmon: #e9967a;
+  --LightSalmon: #ffa07a;
+  --Crimson: #dc143c;
+  --Red: #ff0000;
+  --FireBrick: #b22222;
+  --DarkRed: #8b0000;
+  --White: #ffffff;
+  --PaleGreen: #75e375;
+  --DarkGreen: #006400;
+  --Gold: #cdc078f3;
 }
 
-body{
-    background: linear-gradient(to top, var(--DarkGreen), var(--PaleGreen));
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Londrina Solid', cursive;
+body {
+  /* background: linear-gradient(to bottom, var(--White), var(--Red)); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#root {
+  margin: 20px;
+}
+
+#root h1 {
+  font-size: 100px;
+  color: var(--Crimson);
+}
+
+.boxPokemons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+div {
+  margin: 20px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.carta{
+    background: linear-gradient(to bottom, var(--Red), var(--LightCoral));
+    color: var(--White);
+    width: 10em;
+}
+
+img {
+  width: 8em;
+  margin: 20px;
 }
