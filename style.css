@@ -1,3 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+:root{
+    --LightCoral:#F08080;
+    --Salon:#FA8072;
+    --DarkSalmon:#E9967A;
+    --LightSalmon: #FFA07A;
+    --Crimson:#DC143C;
+    --Red:#FF0000;
+    --FireBrick:#B22222;
+    --DarkRed: #8B0000;
+    --White:#FFFFFF;
+    --PaleGreen:#75e375;
+    --DarkGreen:#006400;
+}
+
 body{
-    background-color: antiquewhite;
+    background: linear-gradient(to top, var(--DarkGreen), var(--PaleGreen));
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Londrina Solid', cursive;
 }
