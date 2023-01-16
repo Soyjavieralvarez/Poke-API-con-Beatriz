@@ -4,6 +4,7 @@
   padding: 0px;
   font-family: "Inter", sans-serif;
   font-family: "Londrina Solid", cursive;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -18,7 +19,9 @@
   --White: #ffffff;
   --PaleGreen: #75e375;
   --DarkGreen: #006400;
-  --Gold: #cdc078f3;
+  --Gold: #ffd700;
+  --DodgerBlue: #1E90FF;
+  --Ivory:#FFFFF0;
 }
 
 body {
@@ -26,7 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 #root {
@@ -34,8 +36,22 @@ body {
 }
 
 #root h1 {
-  font-size: 100px;
+  font-size: 150px;
   color: var(--Crimson);
+}
+
+.buscar {
+  margin: 20px;
+  width: 400px;
+  background-color: var(--LightCoral);
+}
+
+.buscar-boton {
+  width: 30vh;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--White);
+  background-color: var(--LightCoral);
 }
 
 .boxPokemons {
@@ -55,13 +71,50 @@ div {
   align-items: center;
 }
 
-div.carta{
-    background: linear-gradient(to bottom, var(--Red), var(--LightCoral));
-    color: var(--White);
-    width: 10em;
+.carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: solid 10px var(--Gold);
+  background: linear-gradient(to bottom, var(--Red), var(--LightCoral));
+  color: var(--White);
+  width: 15em;
+  border-radius: 80px 80px;
 }
 
-img {
+.carta:hover{
+  
+  border-color: var(--DodgerBlue);
+}
+
+.img {
   width: 8em;
   margin: 20px;
 }
+
+.h2 {
+  margin: 10px;
+  color: var(--Gold);
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: var(--Gold);
+}
+
+.h4:hover {
+  color: var(--White);
+}
+
+.p {
+  color: var(--Ivory);
+}
+
+.p:hover{
+  color: var(--Gold);
+}
+
